@@ -1,0 +1,13 @@
+*.suo
+*.user
+_Resharper.*/
+bin/
+obj/
+published/
+*.orig
+
+~$*.*
+*.vsp
+*.psess
+
+*.sln.docstates
