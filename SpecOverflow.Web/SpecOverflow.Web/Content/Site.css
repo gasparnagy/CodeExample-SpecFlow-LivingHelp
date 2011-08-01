@@ -1,0 +1,275 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    color: #000000;
+    font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
+    font-size: 80%;
+}
+
+a {
+    color: #0077CC;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+    font-size: 170%;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+header {
+    height: 80px;
+    margin: 0 auto;
+    width: 730px;
+    position: relative;
+}
+
+#logo a
+{
+    background-image: url("/content/logo.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    overflow: hidden;
+    display: block;
+    float: left;
+    height: 85px;
+    text-indent: -999999em;
+    width: 250px;    
+}
+
+nav {
+    float: right;
+    font-size: 125%;
+    margin: 38px 0 0px 5px;
+}
+
+nav li {
+    background: none repeat scroll 0 0 #777777;
+    display: block;
+    float: left;
+    margin-right: 7px;
+}
+
+nav a {
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+#main {
+    margin: 0 auto;
+    min-height: 450px;
+    width: 730px;
+}
+
+#main h2 
+{
+    /*float: left;*/
+    font-size: 170%;
+    line-height: 34px;
+    margin-bottom: 0;
+}
+
+#main h2  {
+    border-bottom: 1px solid #666666;
+    clear: both;
+    height: 34px;
+    margin-bottom: 15px;
+}
+
+#questions li
+{
+    border-bottom: 1px dotted #999999;
+    float: left;
+    overflow: hidden;
+    padding: 11px 0;
+    width: 730px;    
+}
+
+.count
+{
+    float: left;
+    height: 38px;
+    margin: 0 3px 0 0;
+    padding: 5px;
+    width: 48px;
+        
+    text-align: center;            
+}
+
+.count span
+{
+    font-size: 190%;
+    font-weight: bold;
+    display: block;
+    height: 25px;
+    line-height: 24px;
+}
+
+.count span:after
+{
+    font-size: 52%;
+    display: block;
+    font-weight: normal;
+    line-height: 13px;
+}
+
+.votes
+{
+    background: none repeat scroll 0 0 #F0F0F0;
+    color: #858585;
+}
+
+.votes span:after
+{
+    content: "votes";
+}
+
+.views
+{
+    background: none repeat scroll 0 0 transparent;
+    color: #555555;
+}
+
+.views span:after
+{
+    content: "views";
+}
+
+.question
+{
+    width: 600px;
+    float: left;
+}
+
+.question .body
+{
+    font-weight: bold;
+    color: #0077CC;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 130%;
+}
+
+.question .meta
+{
+    line-height: inherit;
+    padding-top: 4px;
+    white-space: nowrap;
+    width: auto;
+    color: #999999;
+    float: right;
+}
+
+
+/***************************/
+
+fieldset
+{
+    clear: both;
+    padding-left: 20px;
+}
+
+fieldset legend
+{
+    font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+    font-size: 140%;
+    font-weight: bold;
+    margin-bottom: 7px;    
+    padding-top: 20px;
+}
+
+fieldset label
+{
+    color: #333333;
+    font-size: 115%;
+    font-weight: bold;
+    padding-bottom: 3px;
+    margin-right: 14px;
+}
+
+input {
+    margin: 5px 0;
+    padding: 3px;
+}
+
+input, select, button {
+    border: 1px solid #999999;
+    font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+    font-size: 100%;
+}
+
+fieldset input[type="text"]
+{
+    background-color: white;
+    color: black;
+    height: 18px;
+    opacity: 1;
+}
+
+fieldset input[type="submit"]
+{
+    border: 1px solid #888888;
+    font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+    font-size: 130%;
+    font-weight: bold;
+    margin: 3px;
+    padding: 2px;
+}
+
+fieldset textarea
+{
+    border: 1px solid #999999;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    font-size: 105%;
+}
+
+#titleinput label
+{
+    
+}
+
+#ask input[type="text"]
+{
+    width: 610px;
+}
+
+#bodyinput label
+{
+    display: none;
+}
+
+#ask textarea 
+{
+    height: 100px;
+    line-height: 1.2;
+    padding: 3px;
+    width: 660px;
+}
+
+div.validation-summary-valid
+{
+    display: none;
+}
+
+div.validation-summary-errors {
+    color: #990000;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+div.validation-summary-errors ul 
+{
+    margin-left: 30px;
+}

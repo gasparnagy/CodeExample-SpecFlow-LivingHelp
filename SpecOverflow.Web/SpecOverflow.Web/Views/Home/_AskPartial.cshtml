@@ -1,0 +1,12 @@
+﻿@model SpecOverflow.Web.Models.QuestionModel
+
+<p id="titleinput">
+    <label for="Question.Title">Title</label>
+    @Html.EditorFor(m => m.Title)
+</p>
+<p id="bodyinput">
+    <label for="Question.Body">Body</label>
+    @Html.EditorFor(m => m.Body)
+</p>
+@Html.ValidationSummary("Oops! Your question couldn't be submitted because:")
+<input id="submitask" type="submit" value="Post Your Question" />

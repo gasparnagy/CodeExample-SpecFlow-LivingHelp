@@ -1,0 +1,20 @@
+﻿@model SpecOverflow.LivingHelp.Page
+
+<div id="lh">
+@foreach (var scope in Model.Scopes)
+{
+    <div class="lh-scope" data-lh-scope-type="@scope.Type" data-lh-scope-id="@scope.Key">
+        <ul>
+            @foreach (var entry in scope.Entries)
+            {
+                <li>
+                    <p class="lh-entry-header">@entry.ScenarioTitle (@entry.FeatureTitle)</p>
+                    <div class="lh-entry-body">
+                        @Html.Raw(SpecOverflow.LivingHelp.ScenarioFormatter.FormatHtml(entry.Scenario))
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+}
+</div>

@@ -1,0 +1,19 @@
+﻿@model SpecOverflow.Web.Models.Question
+<li>
+    <div class="question-info">
+        <div class="votes count">
+            <span>@Model.Votes</span>
+        </div>
+        <div class="views count">
+            <span>@Model.Views</span>
+        </div>
+        <div class="question">
+            <div class="body">
+                @Model.Title
+            </div>
+            <div class="meta">
+                question asked on @Model.DateCreated
+            </div>
+        </div>
+    </div>
+</li>

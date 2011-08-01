@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SpecOverflow.Web.Models.Question>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Recent Questions</h2>
+@*@Html.ActionLink("Ask a question", "Ask")*@
+<ul id="questions">
+@foreach (var q in Model)
+{
+    Html.RenderPartial("_QuestionPartial", q);
+}
+</ul>
+
+<fieldset id="ask">
+    <legend>Ask Question</legend>
+    @using (Ajax.BeginForm("Ask", null, new AjaxOptions { 
+        UpdateTargetId = "questions",
+        InsertionMode = InsertionMode.InsertAfter,
+        OnSuccess = "resetForm();flash('#questions li:last')",
+    }, new { id = "askform"}))
+    {
+        Html.RenderPartial("_AskPartial", new SpecOverflow.Web.Models.QuestionModel());
+    }
+</fieldset>
+

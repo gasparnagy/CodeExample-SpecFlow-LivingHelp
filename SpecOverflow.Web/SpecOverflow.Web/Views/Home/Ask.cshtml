@@ -1,0 +1,16 @@
+﻿@model SpecOverflow.Web.Models.QuestionModel
+
+@{
+    ViewBag.Title = "Ask Question";
+}
+
+<h2>Ask Question</h2>
+
+<fieldset id="ask">
+    @using (Html.BeginForm("Ask", "Home", FormMethod.Post, new { id = "askform" } ))
+    {
+        Html.RenderPartial("_AskPartial", Model);
+    }
+</fieldset>
+
+

@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<HelpDescription xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Page path="/">
+    <Scope type="submit" key="askform">
+      <Entry feature="Ask Question" scenario="New questions should be added to the question list">
+        <Text>Scenario: New questions should be added to the question list
+  When I ask a new question with
+    | Title        | Body                |
+    | New question | This is what i need |
+  Then the question should appear at the end of the question list as
+    | Title        | Views | Votes |
+    | New question | 0     | 0     |
+</Text>
+        <Scenario>
+          <Keyword>Scenario</Keyword>
+          <Title>New questions should be added to the question list</Title>
+          <Description />
+          <FilePosition line="9" column="1" />
+          <Steps>
+            <ScenarioStep xsi:type="When">
+              <ScenarioBlock>When</ScenarioBlock>
+              <StepKeyword>When</StepKeyword>
+              <Keyword>When </Keyword>
+              <Text>I ask a new question with</Text>
+              <TableArg>
+                <Header>
+                  <Cells>
+                    <Cell>
+                      <Value>Title</Value>
+                    </Cell>
+                    <Cell>
+                      <Value>Body</Value>
+                    </Cell>
+                  </Cells>
+                  <FilePosition line="11" column="3" />
+                </Header>
+                <Body>
+                  <Row>
+                    <Cells>
+                      <Cell>
+                        <Value>New question</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>This is what i need</Value>
+                      </Cell>
+                    </Cells>
+                    <FilePosition line="12" column="3" />
+                  </Row>
+                </Body>
+              </TableArg>
+              <FilePosition line="10" column="2" />
+            </ScenarioStep>
+            <ScenarioStep xsi:type="Then">
+              <ScenarioBlock>Then</ScenarioBlock>
+              <StepKeyword>Then</StepKeyword>
+              <Keyword>Then </Keyword>
+              <Text>the question should appear at the end of the question list as</Text>
+              <TableArg>
+                <Header>
+                  <Cells>
+                    <Cell>
+                      <Value>Title</Value>
+                    </Cell>
+                    <Cell>
+                      <Value>Views</Value>
+                    </Cell>
+                    <Cell>
+                      <Value>Votes</Value>
+                    </Cell>
+                  </Cells>
+                  <FilePosition line="14" column="3" />
+                </Header>
+                <Body>
+                  <Row>
+                    <Cells>
+                      <Cell>
+                        <Value>New question</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>0</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>0</Value>
+                      </Cell>
+                    </Cells>
+                    <FilePosition line="15" column="3" />
+                  </Row>
+                </Body>
+              </TableArg>
+              <FilePosition line="13" column="2" />
+            </ScenarioStep>
+          </Steps>
+        </Scenario>
+      </Entry>
+      <Entry feature="Ask Question" scenario="The title and the body are required fields for the question">
+        <Text>Scenario: The title and the body are required fields for the question
+  When I ask a new question with
+    | Title | Body |
+    |       |      |
+  Then the following validation errors should be displayed
+    | Message          |
+    | title is missing |
+    | body is missing  |</Text>
+        <Scenario>
+          <Keyword>Scenario</Keyword>
+          <Title>The title and the body are required fields for the question</Title>
+          <Description />
+          <FilePosition line="17" column="1" />
+          <Steps>
+            <ScenarioStep xsi:type="When">
+              <ScenarioBlock>When</ScenarioBlock>
+              <StepKeyword>When</StepKeyword>
+              <Keyword>When </Keyword>
+              <Text>I ask a new question with</Text>
+              <TableArg>
+                <Header>
+                  <Cells>
+                    <Cell>
+                      <Value>Title</Value>
+                    </Cell>
+                    <Cell>
+                      <Value>Body</Value>
+                    </Cell>
+                  </Cells>
+                  <FilePosition line="19" column="3" />
+                </Header>
+                <Body>
+                  <Row>
+                    <Cells>
+                      <Cell>
+                        <Value />
+                      </Cell>
+                      <Cell>
+                        <Value />
+                      </Cell>
+                    </Cells>
+                    <FilePosition line="20" column="3" />
+                  </Row>
+                </Body>
+              </TableArg>
+              <FilePosition line="18" column="2" />
+            </ScenarioStep>
+            <ScenarioStep xsi:type="Then">
+              <ScenarioBlock>Then</ScenarioBlock>
+              <StepKeyword>Then</StepKeyword>
+              <Keyword>Then </Keyword>
+              <Text>the following validation errors should be displayed</Text>
+              <TableArg>
+                <Header>
+                  <Cells>
+                    <Cell>
+                      <Value>Message</Value>
+                    </Cell>
+                  </Cells>
+                  <FilePosition line="22" column="3" />
+                </Header>
+                <Body>
+                  <Row>
+                    <Cells>
+                      <Cell>
+                        <Value>title is missing</Value>
+                      </Cell>
+                    </Cells>
+                    <FilePosition line="23" column="3" />
+                  </Row>
+                  <Row>
+                    <Cells>
+                      <Cell>
+                        <Value>body is missing</Value>
+                      </Cell>
+                    </Cells>
+                    <FilePosition line="24" column="3" />
+                  </Row>
+                </Body>
+              </TableArg>
+              <FilePosition line="21" column="2" />
+            </ScenarioStep>
+          </Steps>
+        </Scenario>
+      </Entry>
+    </Scope>
+    <Scope type="navigate" key="/">
+      <Entry feature="Home Page" scenario="All questions should be displayed on the home most viewed on top">
+        <Text>Scenario: All questions should be displayed on the home most viewed on top
+  Given the following questions registered
+    | Title                | Views | Votes |
+    | Who am I             | 13    | 4     |
+    | Yet another question | 42    | 2     |
+  When I go to the home page
+  Then the following questions should be displayed in this order
+    | Title                | Views | Votes |
+    | Yet another question | 42    | 2     |
+    | Who am I             | 13    | 4     |
+</Text>
+        <Scenario>
+          <Keyword>Scenario</Keyword>
+          <Title>All questions should be displayed on the home most viewed on top</Title>
+          <Description />
+          <FilePosition line="3" column="1" />
+          <Steps>
+            <ScenarioStep xsi:type="Given">
+              <ScenarioBlock>Given</ScenarioBlock>
+              <StepKeyword>Given</StepKeyword>
+              <Keyword>Given </Keyword>
+              <Text>the following questions registered</Text>
+              <TableArg>
+                <Header>
+                  <Cells>
+                    <Cell>
+                      <Value>Title</Value>
+                    </Cell>
+                    <Cell>
+                      <Value>Views</Value>
+                    </Cell>
+                    <Cell>
+                      <Value>Votes</Value>
+                    </Cell>
+                  </Cells>
+                  <FilePosition line="5" column="3" />
+                </Header>
+                <Body>
+                  <Row>
+                    <Cells>
+                      <Cell>
+                        <Value>Who am I</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>13</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>4</Value>
+                      </Cell>
+                    </Cells>
+                    <FilePosition line="6" column="3" />
+                  </Row>
+                  <Row>
+                    <Cells>
+                      <Cell>
+                        <Value>Yet another question</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>42</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>2</Value>
+                      </Cell>
+                    </Cells>
+                    <FilePosition line="7" column="3" />
+                  </Row>
+                </Body>
+              </TableArg>
+              <FilePosition line="4" column="2" />
+            </ScenarioStep>
+            <ScenarioStep xsi:type="When">
+              <ScenarioBlock>When</ScenarioBlock>
+              <StepKeyword>When</StepKeyword>
+              <Keyword>When </Keyword>
+              <Text>I go to the home page</Text>
+              <FilePosition line="8" column="2" />
+            </ScenarioStep>
+            <ScenarioStep xsi:type="Then">
+              <ScenarioBlock>Then</ScenarioBlock>
+              <StepKeyword>Then</StepKeyword>
+              <Keyword>Then </Keyword>
+              <Text>the following questions should be displayed in this order</Text>
+              <TableArg>
+                <Header>
+                  <Cells>
+                    <Cell>
+                      <Value>Title</Value>
+                    </Cell>
+                    <Cell>
+                      <Value>Views</Value>
+                    </Cell>
+                    <Cell>
+                      <Value>Votes</Value>
+                    </Cell>
+                  </Cells>
+                  <FilePosition line="10" column="3" />
+                </Header>
+                <Body>
+                  <Row>
+                    <Cells>
+                      <Cell>
+                        <Value>Yet another question</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>42</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>2</Value>
+                      </Cell>
+                    </Cells>
+                    <FilePosition line="11" column="3" />
+                  </Row>
+                  <Row>
+                    <Cells>
+                      <Cell>
+                        <Value>Who am I</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>13</Value>
+                      </Cell>
+                      <Cell>
+                        <Value>4</Value>
+                      </Cell>
+                    </Cells>
+                    <FilePosition line="12" column="3" />
+                  </Row>
+                </Body>
+              </TableArg>
+              <FilePosition line="9" column="2" />
+            </ScenarioStep>
+          </Steps>
+        </Scenario>
+      </Entry>
+    </Scope>
+  </Page>
+</HelpDescription>

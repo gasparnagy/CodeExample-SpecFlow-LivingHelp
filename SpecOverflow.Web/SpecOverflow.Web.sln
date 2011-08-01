@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecOverflow.Web", "SpecOverflow.Web\SpecOverflow.Web.csproj", "{3406C50C-AC92-401E-8A61-4419B9DA9DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecOverflow.Specs", "SpecOverflow.Specs\SpecOverflow.Specs.csproj", "{83FE3097-0C87-4530-B5E0-7FE936591470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecOverflow.LivingHelp", "SpecOverflow.LivingHelp\SpecOverflow.LivingHelp.csproj", "{3E128468-075B-4B66-B447-D1F1275A4CEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3406C50C-AC92-401E-8A61-4419B9DA9DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3406C50C-AC92-401E-8A61-4419B9DA9DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3406C50C-AC92-401E-8A61-4419B9DA9DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3406C50C-AC92-401E-8A61-4419B9DA9DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83FE3097-0C87-4530-B5E0-7FE936591470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83FE3097-0C87-4530-B5E0-7FE936591470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83FE3097-0C87-4530-B5E0-7FE936591470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83FE3097-0C87-4530-B5E0-7FE936591470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E128468-075B-4B66-B447-D1F1275A4CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E128468-075B-4B66-B447-D1F1275A4CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E128468-075B-4B66-B447-D1F1275A4CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E128468-075B-4B66-B447-D1F1275A4CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

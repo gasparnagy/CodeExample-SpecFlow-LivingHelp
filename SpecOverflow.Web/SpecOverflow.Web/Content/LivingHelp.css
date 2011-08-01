@@ -1,0 +1,95 @@
+﻿#lh 
+{
+}
+
+div.lh-scope
+{
+    display: none;
+    position: absolute;
+    border: 1px solid #7e5b00;
+    padding: 10px 10px 10px 20px;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.19, rgb(255,239,198)),
+        color-stop(0.4, rgb(255,247,227)),
+        color-stop(0.79, rgb(255,251,240))
+    );
+    background-image: -moz-linear-gradient(
+        center bottom,
+        rgb(255,239,198) 19%,
+        rgb(255,247,227) 40%,
+        rgb(255,251,240) 79%
+    );
+}
+
+div.lh-scope li
+{
+    list-style-type: none;
+}
+
+.lh-entry-header 
+{
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 5px;
+}
+
+.lh-entry-body
+{
+    margin-left: 14px;
+    margin-bottom: 10px;
+}
+
+pre.lh-entry-body
+{
+    font-size: 140%;
+}
+
+img.lh-help-icon
+{
+    vertical-align: middle;
+}
+
+header img.lh-help-icon
+{
+    position: absolute;
+    left: 0px;
+}
+
+
+/***********************************/
+
+.gherkin-keyword
+{
+    color: #548DD4;
+}
+
+.gherkin-scenario table
+{
+    font-size: 90%;
+    
+    background: #FFFFFF;
+    margin: 2px 0 3px 28px;
+    border-spacing: 0px;
+    border-style: solid;
+    border-color: #d0d0d0;
+    border-left-width: 1px;
+    border-top-width: 1px;
+}
+
+table.gherkin-table-arg td, table.gherkin-table-arg th
+{
+    text-align: left;
+    border-style: solid;
+    border-color: #d0d0d0;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    padding: 2px 4px 1px 4px;
+}
+
+p.gherkin-and-step 
+{
+    margin-left: 14px;
+}
